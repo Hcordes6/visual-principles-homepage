@@ -7,34 +7,98 @@
     <link rel="stylesheet" href="../styles.css">
     <title>Just Walking Around</title>
     <style>
+        @keyframes structure {
+            /* 0% {
+                background-color: #39375B;
+            } */
 
+
+
+            0% {
+                background-color: #F1FFFA;
+            }
+
+
+
+            100% {
+                background-color: #d282c9;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #d282c9;
+            color: #ececec;
+            text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+            display: flex;
+            position: fixed;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            font-family: "Oswald", sans-serif;
+            box-shadow: 0 10px 16px rgba(12, 3, 82, .3);
+        }
+
+        header div {
+            width: 100%;
+        }
+
+        body {
+            /* background-color: #dedcdb; */
+            animation-name: structure;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition: ease-out;
+            color: #39375B;
+        }
+
+        main {
+            margin-top: 120px;
+            font-size: 60px;
+            margin-bottom: 60px;
+
+        }
+
+        p {
+            background-color: #F5B0CB;
+            box-shadow: 10px 10px 16px rgba(12, 3, 82, .2);
+            margin: 20px 15%;
+            padding: 100px;
+            border-radius: 10px;
+            border-bottom: 3px solid #DC6ACF;
+            border-right: 2px solid #DC6ACF;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <div class="center">
+        <div>
             <h1>“Just Walking Around”</h1>
             <h2> John Ashberry </h2>
             <h5> 1998 </h5>
-            <p>
-                ***
-            </p>
         </div>
     </header>
     <main>
 
-        <div class="flex">
+        <div>
             <p>
                 What name do I have for you?
                 Certainly there is not name for you
                 In the sense that the stars have names
                 That somehow fit them. Just walking around,
             </p>
-
-            <br>
-            <br>
             <p>
                 An object of curiosity to some,
                 But you are too preoccupied
@@ -44,8 +108,6 @@
 
             </p>
         </div>
-        <br>
-        <br>
 
         <p>
             Smiling to yourself and others.
@@ -54,8 +116,6 @@
             Counterproductive, as you realize once again
 
         </p>
-        <br>
-        <br>
         <p>
             That the longest way is the most efficient way,
             The one that looped among islands, and
@@ -63,8 +123,6 @@
             And now that the end is near
 
         </p>
-        <br>
-        <br>
         <p>
             The segments of the trip swing open like an orange.
             There is light in there and mystery and food.
@@ -77,3 +135,13 @@
 </body>
 
 </html>
+
+
+<!-- 
+color palette:
+#39375B - space cadet
+#745C97 - Ultra Violet
+#DC6ACF - Orchid
+#F5B0CB - Lavender Pink
+#F1FFFA - Mint Cream
+-->
