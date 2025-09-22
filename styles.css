@@ -3,8 +3,8 @@
     background-color: #50514F;
     color: #F6F8FF;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
     cursor: pointer;
     bottom: 20px;
     transition: .3s ease;
@@ -21,14 +21,19 @@
     backdrop-filter: blur(5px);
 }
 .next {
-    right: 20px;
-    position: fixed;
+    right: 20px !important;
+    position: fixed !important;
 }
 
 .prev {
     left: 20px;
     position: fixed;
 }
+.bottomPadding {
+    padding-bottom: 50px;
+}
+
+
 /* 
 Color palette:
 black: #272D2D
