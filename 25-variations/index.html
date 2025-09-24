@@ -14,17 +14,24 @@
         }
 
         body {
-            background-color: #F6F8FF;
+            background-color: #f8f9fa;
         }
 
         main {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
         }
+
+        /* Header styles */
 
         header {
             font-family: "Oswald", sans-serif;
-            background-color: #50514F;
-            color: #F6F8FF;
+            background-color: #212529;
+            color: #f8f9fa;
             text-align: center;
             padding: 5px;
             width: 100%;
@@ -42,76 +49,219 @@
 
         header a {
             text-decoration: none;
-            color: #F6F8FF;
+            color: #f8f9fa;
+            font-style: italic;
         }
+
+        header h2:hover {
+            transform: translateY(-3px);
+            transition: ease-in-out .1s;
+        }
+
+
+        /* button styles */
 
         button {
             display: block;
-            background-color: #e8e8e8;
-            color: #3f3f3f;
-            width: 80%;
+            background-color: #ffffff;
+            color: #212529;
+            width: 100%;
             justify-items: center;
-            border: none;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
             margin: 3px;
             transition: .3s ease;
             border-radius: 5px;
-            border: 1px solid #c8c8c8;
+            border: 1px solid #6c757d;
         }
 
         button:hover {
-            background-color: #3f3f3f;
-            color: #e8e8e8;
+            background-color: #000000;
+            color: #ffffff;
             transform: scale(1.01);
+            border-color: #000000;
         }
 
         .buttons {
-            padding-bottom: 50px;
-            display: flex;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            margin: 0px 20px;
+            width: 90%;
+            align-self: center;
+            margin-top: 10px;
+            display: block;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin: 0px 20px
         }
+
+        section p,
+        section li {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        section p {
+            margin-top: 10px;
+        }
+
+        section ul {
+            margin: 5px 0 0px 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+        }
+
+        section div {}
     </style>
 </head>
 
 <body>
     <header>
         <h1>25 Variations</h1>
-        <h2> <a href="../index.html">Home</a> </h2>
+        <div>
+            <h2> <a href="../index.html">Home</a> </h2>
+        </div>
     </header>
 
     <main>
-        <div class="buttons">
-            <button onclick="location.href='01.html'">One</button>
-            <button onclick="location.href='02.html'">Two</button>
-            <button onclick="location.href='03.html'">Three</button>
-            <button onclick="location.href='04.html'">Four</button>
-            <button onclick="location.href='05.html'">Five</button>
-            <button onclick="location.href='06.html'">Six</button>
-            <button onclick="location.href='07.html'">Seven</button>
-            <button onclick="location.href='08.html'">Eight</button>
-            <button onclick="location.href='09.html'">Nine</button>
-            <button onclick="location.href='10.html'">Ten</button>
-            <button onclick="location.href='11.html'">Eleven</button>
-            <button onclick="location.href='12.html'">Twelve</button>
-            <button onclick="location.href='13.html'">Thirteen</button>
-            <button onclick="location.href='14.html'">Fourteen</button>
-            <button onclick="location.href='15.html'">Fifteen</button>
-            <button onclick="location.href='16.html'">Sixteen</button>
-            <button onclick="location.href='17.html'">Seventeen</button>
-            <button onclick="location.href='18.html'">Eighteen</button>
-            <button onclick="location.href='19.html'">Nineteen</button>
-            <button onclick="location.href='20.html'">Twenty</button>
-            <button onclick="location.href='21.html'">Twenty-One</button>
-            <button onclick="location.href='22.html'">Twenty-Two</button>
-            <button onclick="location.href='23.html'">Twenty-Three</button>
-            <button onclick="location.href='24.html'">Twenty-Four</button>
-            <button onclick="location.href='25.html'">Twenty-Five</button>
-        </div>
+        <section>
+            <h2>
+                Level 1 - Intro to HTML
+            </h2>
+            <p>
+                This section introduces the basic elements of html. This level only allows:
+            </p>
+            <ul>
+                <li>Sectioning elements and boilerplate (html, title, head, body)</li>
+                <li>Paragraphs (p)</li>
+                <li>Breaks (br)</li>
+                <li>White Spaces</li>
+            </ul>
+            <p>
+                No other elements, attributes, or CSS is allowed. The goal is to experiment with breaking up text in
+                different ways.
+            </p>
+            <div class="buttons">
+                <button onclick="location.href='01.html'">One</button>
+                <button onclick="location.href='02.html'">Two</button>
+                <button onclick="location.href='03.html'">Three</button>
+                <button onclick="location.href='04.html'">Four</button>
+                <button onclick="location.href='05.html'">Five</button>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Level 2 - More HTML
+            </h2>
+            <p>
+                This section adds on more basic elements of html. In addition to the other introduced elements, this
+                level only allows:
+            </p>
+            <ul>
+                <li>More sectioning elements (div, span)</li>
+                <li>Headers (h1, h2, h3, h4, h5, h6)</li>
+                <li>Inline text styles (strong, em)</li>
+                <li>Listing Elements (ul, ol, li)</li>
+                <li>Links - no external sites (a)</li>
+            </ul>
+            <p>
+                No other elements, attributes, or CSS is allowed. The goal is to focus on presenting the text in various
+                hierarchies & scales using only HTML.
+            </p>
+            <div class="buttons">
+                <button onclick="location.href='06.html'">Six</button>
+                <button onclick="location.href='07.html'">Seven</button>
+                <button onclick="location.href='08.html'">Eight</button>
+                <button onclick="location.href='09.html'">Nine</button>
+                <button onclick="location.href='10.html'">Ten</button>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Level 3 - Intro to CSS
+            </h2>
+            <p>
+                This section introduces basic styles of CSS. In addition to the other elements introduced through HTML,
+                this level only allows:
+            </p>
+            <ul>
+                <li>padding</li>
+                <li>border</li>
+                <li>margin</li>
+                <li>position</li>
+                <li>display</li>
+                <li>float</li>
+                <li>top, right, bottom, left</li>
+                <li>height, width</li>
+            </ul>
+            <p>
+                No other elements or attributes are allowed. The goal is to focus on positioning elements using CSS and
+                experiment with space.
+            </p>
+            <div class="buttons">
+                <button onclick="location.href='11.html'">Eleven</button>
+                <button onclick="location.href='12.html'">Twelve</button>
+                <button onclick="location.href='13.html'">Thirteen</button>
+                <button onclick="location.href='14.html'">Fourteen</button>
+                <button onclick="location.href='15.html'">Fifteen</button>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Level 4 - More CSS
+            </h2>
+            <p>
+                This section allows more styles from CSS. In addition to the other elements and attributes introduced
+                through HTML and CSS,
+                this level only allows:
+            </p>
+            <ul>
+                <li>font-style</li>
+                <li>font-weight</li>
+                <li>font-size</li>
+                <li>font-family</li>
+                <li>text-align</li>
+                <li>text-transform</li>
+                <li>line-height</li>
+                <li>letter-spacing</li>
+            </ul>
+            <p>
+                No other elements or attributes are allowed. The goal is to focus on typography using CSS and experiment
+                with hierarchy and scale.
+            </p>
+            <div class="buttons">
+                <button onclick="location.href='16.html'">Sixteen</button>
+                <button onclick="location.href='17.html'">Seventeen</button>
+                <button onclick="location.href='18.html'">Eighteen</button>
+                <button onclick="location.href='19.html'">Nineteen</button>
+                <button onclick="location.href='20.html'">Twenty</button>
+            </div>
+        </section>
+        <section>
+            <h2>
+                Level 5 - No Restrictions
+            </h2>
+            <p>
+                This section allows all HTML and CSS (except for img, iframe, and a via linking to external sites. This is a purely typographic & semantic project, so no external images, links, or other assets should be used).
+            </p>
+            <p>
+                The goal is to focus on doing something hasn't previously been done before using colors, testing limits, experimenting with new CSS properties, keeping in mind screen reader accessibility, etc.
+            </p>
+            <div class="buttons">
+                <button onclick="location.href='21.html'">Twenty-One</button>
+                <button onclick="location.href='22.html'">Twenty-Two</button>
+                <button onclick="location.href='23.html'">Twenty-Three</button>
+                <button onclick="location.href='24.html'">Twenty-Four</button>
+                <button onclick="location.href='25.html'">Twenty-Five</button>
+            </div>
+        </section>
     </main>
 
 </body>
