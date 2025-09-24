@@ -33,13 +33,13 @@
             background-color: #212529;
             color: #f8f9fa;
             text-align: center;
-            padding: 5px;
+            padding: 15px;
             width: 100%;
             top: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            box-shadow: 0 10px 16px rgba(12, 3, 82, .2);
         }
 
         header h1,
@@ -118,7 +118,19 @@
             padding: 0 10px;
         }
 
-        section div {}
+        footer {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-style: italic;
+            padding: 20px;
+            font-size: 14px;
+            color: #cecece;
+            background-color: #212529;
+        }
+
+        footer a {
+            color: inherit;
+        }
     </style>
 </head>
 
@@ -249,10 +261,13 @@
                 Level 5 - No Restrictions
             </h2>
             <p>
-                This section allows all HTML and CSS (except for img, iframe, and a via linking to external sites. This is a purely typographic & semantic project, so no external images, links, or other assets should be used).
+                This section allows all HTML and CSS (except for img, iframe, and a via linking to external sites. This
+                is a purely typographic & semantic project, so no external images, links, or other assets should be
+                used).
             </p>
             <p>
-                The goal is to focus on doing something hasn't previously been done before using colors, testing limits, experimenting with new CSS properties, keeping in mind screen reader accessibility, etc.
+                The goal is to focus on doing something hasn't previously been done before using colors, testing limits,
+                experimenting with new CSS properties, keeping in mind screen reader accessibility, etc.
             </p>
             <div class="buttons">
                 <button onclick="location.href='21.html'">Twenty-One</button>
@@ -263,7 +278,10 @@
             </div>
         </section>
     </main>
-
+    <footer>
+        <p> Poem text used from John Ashberry's "Just Walking Around - 1998" - <a
+                href="https://poetryarchive.org/poem/just-walking-around/">Source</a></p>
+    </footer>
 </body>
 
 </html>
